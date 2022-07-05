@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant-TW">
 
 <head>
-    <title>Page Title</title>
+    <title>阿姆斯特朗旋風</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -22,8 +22,7 @@
         var RADIUS_SCALE_MIN = 1;
         var RADIUS_SCALE_MAX = 1.5;
 
-        // The number of particles that are used to generate the trail
-        var QUANTITY = 50;
+        var QUANTITY = 100;
 
         var canvas;
         var context;
@@ -146,12 +145,6 @@
             context.fill();
             // Back to source-over for the rest of the operation
             context.globalCompositeOperation = 'source-over';
-
-            //var CanvasImg = context.getImageData(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-            //context.clearRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-            //context.putImageData(CanvasImg, 0, 0);// Creating an image then redrawing with drawImage works better but the performance is terrible thanks to having to wait for image.onload. It can also cause extreme lag in certain browsers, including firefox.
-
-
 
             for (i = 0, len = particles.length; i < len; i++) {
                 var particle = particles[i];
