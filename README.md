@@ -1,1 +1,0 @@
-# garyellow.github.io
